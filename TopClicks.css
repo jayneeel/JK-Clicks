@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+body
+{
+	font-family: Lato;
+}
+
+#head
+{
+	font-family: Raleway;
+	border-bottom: 2px solid #DBD7D2; 
+	padding: 10px;
+}
+
+#about
+{
+	font-size: 1.5em;
+	line-height: 1.6em;
+	margin: 20px auto;
+	width: 40%;
+	text-align: justify;
+	border: 20px solid #232323;
+	padding: 20px;
+	
+}
+
+span
+{
+	font-size: 1.6em;
+}
+nav{
+	margin-top: 5px; 
+}

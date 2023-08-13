@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="MasterCSS.css">
+	<title>Login</title>
+	<script type="text/javascript">
+
+		function replace()
+		{
+			window.location.replace("Registration.html");
+		}
+	</script>
+</head>
+<body>
+<div class="cookieDiv">
+	<h1 align="center">Login</h1>
+	<form name="loginForm" method="post">
+		<p>
+				<input type="text" name="user" placeholder="Username" class="input">
+		</p>
+		<p>
+				<input type="password" name="pass" placeholder="Password" class="input">
+				<br><br>
+		</p>
+		<p>
+			<button class="button" onclick="WriteCookie()">Login</button>
+			<br>
+				<p id="signUp">Already a Member of JK CLICKS<br>
+				<button class="button" onclick="replace()">Click Me</button></p>
+		</p>
+	</form>
+</div>
+</body>
+</html>

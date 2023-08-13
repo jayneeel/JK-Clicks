@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type = "text/javascript">
+	function WriteCookie()
+	{
+		var now = new Date();
+		now.setMonth( now.getMonth() + 1 );
+		cookievalue = escape(document.cookieForm.user.value) + ";";
+		document.cookie = "name=" + cookievalue;
+		document.cookie = "expires=" + now.toUTCString() + ";";
+	}
+
+	function ReadCookie()
+	{
+		var allcookies = document.cookie;
+		document.write ("All Cookies : " + allcookies +"\n");
+		cookiearray = allcookies.split(';');
+		for(var i=0; i<cookiearray.length; i++) 
+		{
+		name = cookiearray[i].split('=')[0];
+		value = cookiearray[i].split('=')[1];
+		document.writeln("Name is : " + name + " and Value is : " + value);
+		}
+
+	}
+</script>
+	<link rel="stylesheet" type="text/css" href="MasterCSS.css">
+	<title>Cookies</title>
+</head>
+<body>
+<div class="cookieDiv">
+	<h1 align="center">Cookies</h1>
+	<form name="cookieForm">
+		<p>
+				<input type="text" name="user" placeholder="Username" class="input">
+		</p>
+		<p>
+				<input type="password" name="pass" placeholder="Password" class="input">
+		</p>
+		<p>
+			<button class="button" onclick="WriteCookie()">Set Cookie</button>
+			<button class="button" onclick="ReadCookie()">Read Cookie</button>
+		</p>
+	</form>
+</div>
+</body>
+</html>

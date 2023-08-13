@@ -1,0 +1,11 @@
+#imgDisplay{
+  box-shadow: 0 15px 30px #191919;
+}
+
+#label{
+  font-family: Lato;
+  font-size: 1.3em;
+}
+nav{
+margin-top: 5px; 
+}

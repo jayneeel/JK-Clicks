@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish:wght@500&display=swap');
+div
+{
+	width:300px;
+	margin: 50px auto;
+	background: white;
+	height:500px;
+	padding:20px 0 20px 20px;
+
+}
+
+
+input
+{
+	width:270px;
+	font-family:  Mulish;
+	height:30px;
+	font-weight: 500;
+	font-size: 90%
+}
+
+
+select
+{
+	font-family:  Mulish;
+	height:25px;
+	font-weight: 500;
+	font-size: 90%;
+	width: 150px;
+	outline: none;
+}
+
+#phNo
+{
+	width:180px;
+}
+
+
+h1
+{
+	font-family: "Lato";
+	font-weight: normal;
+}
+
+
+
+.button
+{
+	font-family:"Lato";
+	background-color: #232323;
+	border: none;
+	outline: none;
+	text-align: center;
+	color: white;
+	padding: 7px 20px;
+	font-size: 15px;
+	transition-duration: 0.4s;
+}
+
+.button:hover,.button:focus
+{
+	background-color: #4CAF50;
+  	color: white;
+}
+
+body{
+background: #ECE9E6;  
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+}
+
+.input{
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #232323;
+
+}
+
+.input:focus
+{
+	border-bottom: 1px solid  #A2D7DD;
+}
+
+.cookieDiv
+{
+	width:300px;
+	margin: 50px auto;
+	background: white;
+	height:250px;
+	padding:20px 0 20px 20px;
+}

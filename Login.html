@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+	<link rel="stylesheet" type="text/css" href="MasterCSS.css">
+	<title>Login</title>
+<!-- 	<script type="text/javascript">
+		function WriteCookie()
+		{
+		// 	if(document.forms.loginForm.user.value==0 || document.forms.loginForm.pass.value==0)
+		// 	{
+		// 		alert("Please Fill the credentials");
+		// 		return false;
+		// 	}
+		// 	// window.open("photoGrid.html");
+		// 	var now = new Date();
+		// 	now.setMonth( now.getMonth() + 1 );
+		// 	cookievalue = escape(document.cookieForm.user.value) + ";";
+		// 	document.cookie = "name=" + cookievalue;
+		// 	document.cookie = "expires=" + now.toUTCString() + ";";
+		// 	var allcookies = document.cookie;
+		// 	cookiearray = allcookies.split(';');
+		// 	for(var i=0; i<cookiearray.length; i++) 
+		// 	{
+		// 		name = cookiearray[i].split('=')[0];
+		// 		value = cookiearray[i].split('=')[1];
+		// 	}
+		// }
+
+		// // function replace()
+		// // {
+		// // 	window.location.replace("Registration.html");
+		// // }
+	</script> -->
+</head>
+<body oncontextmenu="return false;">
+	<nav>
+<div class="ui secondary  menu">
+  <b><a class="active item" onclick="window.location.replace('photoGrid.html')">
+    JK Clicks
+  </a></b>
+  <a class="item" onclick="window.open('TopClicks.html')">
+    Top Clicks
+  </a>
+  <a class="item">
+    
+  </a>
+  <div class="right menu">
+    <a class="ui primary button" href="Registration.html">
+      Register
+    </a>
+    <a class="ui button" href="Login.html">
+      LogIn
+    </a>
+  </div>
+</div>
+</nav>
+<div class="cookieDiv">
+
+	<h1 align="center">Login</h1>
+	<form name="loginForm" method="post" action="login.php">
+		<p>
+				<input type="text" name="user" placeholder="Username" class="input">
+		</p>
+		<p>
+				<input type="password" name="pass" placeholder="Password" class="input">
+				<br><br>
+		</p>
+		<p>
+			<button class="button" name="logBtn" onclick="WriteCookie()">Login</button>
+			<br>
+				<p id="signUp" align="center">Not a Member of JK CLICKS?<br></p>
+				<input type="button" class="button" onclick="replace()" value="CLICK ME">
+		</p>
+	</form>
+</div>
+</body>
+</html>

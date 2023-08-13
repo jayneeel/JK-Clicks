@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="TopClicks.css">
+	<title>Top Clicks</title>
+	<script type="text/javascript">
+		var imgarr=new Array("tc1.jpg","tc2.jpg","tc3.jpg","tc4.jpg","tc5.jpg","tc6.jpg","tc7.jpg","tc8.jpg","tc9.jpg","tc10.jpg",);
+		var i=0;
+		function changeImg(val)
+		{
+			i=i+val;
+			if(i>imgarr.length-1)
+			{
+				i=0;	
+			}
+			if(i<0)
+			{
+				i=imgarr.length-1;
+			}
+			display.src=imgarr[i];
+		}
+	</script>
+</head>
+<body >
+	<nav>
+<div class="ui secondary  menu">
+  <b><a class="active item" href="photoGrid.html">
+    JK Clicks
+  </a></b>
+  <a class="item" onclick="window.open('TopClicks.html')">
+    Top Clicks
+  </a>
+  <a class="item">
+    
+  </a>
+  <div class="right menu">
+    <a class="ui primary button" href="Registration.html">
+      Register
+    </a>
+    <a class="ui button" href="Login.html">
+      LogIn
+    </a>
+  </div>
+</div>
+</nav>
+<h1 align="center">Top Clicks of the Month!</h1>
+<center>
+
+	
+	<img src="tc1.jpg" width="600px" height="400px" id="display"><br><br><br>
+	<button onclick="changeImg(-1)"  class="ui primary button">Previous Image <i class="angle left icon"></i></button>&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button onclick="changeImg(1)"  class="ui primary button">Next Image <i class="angle right icon"></i></button>
+
+</center>
+<br>
+<br><br><br><br>
+
+<div id="main"></div>
+<div id="about" align="center">
+<h1 id="head" align="center">Why JK Clicks <span>?</span></h1><br>
+JK Clicks internet’s source of freely usable images.JK Clicks was born from the pain we had in finding great, usable imagery. And we weren’t alone. Which is why, today—millions of creators from around the world have downloaded over 2 billion  images to create presentations, artwork, mockups, and more.JK Clicks  is a platform powered by an amazing community that has gifted hundreds of thousands of their own photos to fuel creativity around the world. So sign up for free, or don’t. Either way, you’ve got access to over a million photos under the license—which makes them free to do-whatever-you-want with.</div>
+</body>
+</html>

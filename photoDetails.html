@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="photoDetails.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script type="text/javascript">
+  var imgArray=new Array("img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg","img9.jpg");
+  var pGArray=new Array("Massimo Margagnoni","Massimo Margagnoni","Massimo Margagnoni","Giuseppe Milo","Giuseppe Milo","Giuseppe Milo","GorlitzPhotography","GorlitzPhotography","GorlitzPhotography");
+
+  function imgdetails(menu)
+  {
+    var i=menu;
+    var name=document.getElementById("pGName");
+    imgDisplay.src=imgArray[i];
+    name.innerHTML=pGArray[i];
+  }
+  </script>
+	<title>Photo Details</title>
+</head>
+<body>
+<nav>
+<div class="ui secondary  menu">
+  <b><a class="active item" onclick="window.location.replace('photoGrid.html')">
+    JK Clicks
+  </a></b>
+  <a class="item" onclick="window.open('TopClicks.html')">
+    Top Clicks
+  </a>
+  <a class="item">
+    
+  </a>
+  <div class="right menu">
+    <a class="ui primary button" href="Registration.html">
+      Register
+    </a>
+    <a class="ui button" href="Login.html">
+      LogIn
+    </a>
+  </div>
+</div>
+</nav>
+<center><br><br>
+  <div id="label">Hover on the Images</div><br>
+
+<img src="img1.jpg" width="100px" height="100px" onmouseover="imgdetails(0)">
+<img src="img2.jpg" width="100px" height="100px" onmouseover="imgdetails(1)">
+<img src="img3.jpg" width="100px" height="100px" onmouseover="imgdetails(2)">
+
+
+<img src="img4.jpg" width="100px" height="100px" onmouseover="imgdetails(3)">
+<img src="img5.jpg" width="100px" height="100px" onmouseover="imgdetails(4)">
+<img src="img6.jpg" width="100px" height="100px" onmouseover="imgdetails(5)">
+
+<img src="img7.jpg" width="100px" height="100px" onmouseover="imgdetails(6)">
+<img src="img8.jpg" width="100px" height="100px" onmouseover="imgdetails(7)">
+<img src="img9.jpg" width="100px" height="100px" onmouseover="imgdetails(8)">
+
+  <br><br>
+<table>
+	<tr>
+		<td></td>
+		<td><img src="img1.jpg" id="imgDisplay" width="400px" height="400px"></td>
+		<td></td>
+	</tr>
+</table><br><br>
+<h1 id="pGName">Massimo Margagnoni</h1>
+</center>
+</body>
+</html>

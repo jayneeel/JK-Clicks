@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<script type="text/javascript" src="Registration.js"></script>
+	<link rel="stylesheet" type="text/css" href="MasterCSS.css">
+	<title>Registration</title>
+</head>
+<body oncontextmenu="return false;">
+<nav>
+<div class="ui secondary  menu">
+  <b><a class="active item" onclick="window.location.replace('photoGrid.html')">
+    JK Clicks
+  </a></b>
+  <a class="item" onclick="window.open('TopClicks.html')">
+    Top Clicks
+  </a>
+  <div class="right menu">
+    <a class="ui primary button" href="Registration.html">
+      Register
+    </a>
+    <a class="ui button" href="Login.html">
+      LogIn
+    </a>
+  </div>
+</div>
+</nav>
+
+	<div id="mainDiv">
+
+		<form name="register" onsubmit="fieldcheck()" method="post" action="register.php">
+				<h1 align="center">Registration</h1>
+			<p>
+				<input type="text" name="fname" placeholder="First Name" id="fname"  class="input">
+			</p>
+
+			<p>
+				<input type="text" name="lname" id="lname" placeholder="Last Name"  class="input">
+			</p>
+
+			<p>
+				<select name="Gender" for="gender">
+					<option selected disabled>Gender</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Others">Others</option>
+				</select>
+			</p>
+
+			<p>
+				<input type="date" name="DOB" class="input">		
+			</p>
+
+			<p>
+				<input type="text" name="email1" id="Email" placeholder="Email" onblur="emailcheck()" class="input">
+			</p>
+
+			<p>
+				<input type="text" name="phone" id="phoneno" maxlength="10" placeholder="Phone" onkeydown="return phnocheck(event)" class="input">
+			</p>
+
+			<p>
+				<input type="password" name="pass1" maxlength="12" placeholder="Password" class="input">
+			</p>
+
+			<p>
+				<input type="password" name="pass2" maxlength="12" placeholder="Re-enter your Password" onblur="passcheck()" class="input">
+			</p>
+
+			<p>
+				<input type="submit" name="regBtn" value="REGISTER!" class="button">
+			</p>
+		</form>
+
+	</div>
+
+</body>
+</html>
